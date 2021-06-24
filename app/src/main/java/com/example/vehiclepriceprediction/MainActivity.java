@@ -54,7 +54,7 @@ String currentImagePath =null;
             }
             if (imageFile!=null)
             {
-                Uri imageUri = FileProvider.getUriForFile(this,"com.example.vehiclePricePrediction.fileprovider",imageFile);
+                Uri imageUri = FileProvider.getUriForFile(this,"com.example.vehiclePricePrediction.provider",imageFile);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
                 startActivityForResult(cameraIntent,IMAGE_REQUEST);
             }

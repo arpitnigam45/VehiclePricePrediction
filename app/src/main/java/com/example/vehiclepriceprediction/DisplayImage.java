@@ -15,6 +15,7 @@ ImageView imageView;
         setContentView(R.layout.activity_display_image);
         imageView=findViewById(R.id.mimageView);
         Bitmap bitmap= BitmapFactory.decodeFile(getIntent().getStringExtra("image_path"));
+
         imageView.setImageBitmap(bitmap);
     }
 
